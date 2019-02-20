@@ -1,0 +1,28 @@
+{
+    "devDependencies": {
+        "@babel/cli": "^7.2.3",
+        "cross-env": "^5.2.0",
+        "@babel/core": "^7.3.3",
+        "@babel/plugin-proposal-class-properties": "^7.3.3",
+        "@babel/preset-env": "^7.3.1"
+    },
+    "version": "0.0.22",
+    "author": "phlax",
+    "main": "js/index.js",
+    "scripts": {
+        "start": "node scripts/start.js",
+        "test": "node scripts/test.js",
+        "build": "cross-env NODE_ENV=production babel js -d dist --ignore 'src/**/*.test.js' --copy-files"
+    },
+    "name": "@pluggable/sharedworker",
+    "license": "GPL-3.0-or-later",
+    "description": "Pluggable sharedworker",
+    "dependencies": {
+        "pouchdb": "^7.0.0",
+        "pouchdb-debug": "^7.0.0",
+        "pouchdb-find": "^7.0.0"
+    },
+    "files": [
+        "js"
+    ]
+}
